@@ -59,7 +59,7 @@ window.addEventListener('resize', () => {
 //scroll//
 const bodyColr = document.querySelector('body');
 window.addEventListener('scroll', () => {
-    bodyColr.style.backgroundColor = "gray";
+    bodyColr.style.backgroundColor = setBg();
     setTimeout(function() {
         bodyColr.style.backgroundColor='';
     }, 500);
@@ -76,7 +76,7 @@ const setBg = () => {
   bodyColr.addEventListener("keydown", evt => {
       if(evt.code == 'KeyA') {
         setBg();
-      } else if (evt.code == 'KeyB') {
+      } else if (evt.code == 'Escape') {
         bodyColr.style.backgroundColor = ""
       }
   });
@@ -86,7 +86,7 @@ const setBg = () => {
   bodyColr.addEventListener("keyup", evt => {
       if(evt.code == 'KeyA') {
         setBg();
-      } else if (evt.code == 'KeyB') {
+      } else if (evt.code == 'Escape') {
         bodyColr.style.backgroundColor = ""
       }
   });
