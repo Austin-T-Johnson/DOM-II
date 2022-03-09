@@ -134,3 +134,17 @@ mouseEnter.addEventListener('mouseenter', () => {
 mouseEnter.addEventListener('mouseleave', () => {
     mouseEnter.style.backgroundColor = 'white';
 })
+
+//img invert color on hover//
+
+
+    const firstImg = document.querySelector('img');
+    firstImg.addEventListener('mouseover', () => {
+        firstImg.style.filter="invert(100%)";
+        setTimeout(function() {
+            firstImg.style.filter="invert(0%)";
+        }, 1000);
+        },false)
+    
+
+    
